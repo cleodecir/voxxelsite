@@ -1,0 +1,269 @@
+/*=============== FONTS ===============*/
+@font-face {
+  font-family: "AvantGardeBook";
+  src: url("./Fonts/ITC\ Avant\ Garde\ Book\ SWA.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  /*Black colors being used for the nav background*/
+  --black-color: hsl(220, 24%, 12%);
+  --black-color-light: hsl(220, 24%, 15%);
+  --black-color-lighten: hsl(220, 20%, 18%);
+  --white-color: #fff;
+  --body-color: hsl(220, 100%, 97%);
+  --color-primary: #724799;
+  --color-secondary: #f28000;
+  --color-text-title: #32264d;
+  --color-text-complement: #9c98a6;
+  --color-text-base: #6a6180;
+  --color-line-in-white: #e6e6f0;
+  --color-input-background: #f8f8fc;
+  --color-button-text: #ffffff;
+  --color-box-base: #787f89;
+  --color-box-footer: #fafafc;
+  --color-small-info: #c1bccc;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "AvantGardeBook", sans-serif;
+
+  --normal-font-size: 1.8rem;
+  --small-font-size: 1.2rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  scroll-behavior: smooth;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Avant Garde", sans-serif /*var(--body-font)*/;
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  /* background-color: var(--black-color); */
+}
+
+ul {
+  list-style: none;
+  /* Color highlighting when pressed on mobile devices */
+  /*-webkit-tap-highlight-color: transparent;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-background {
+  background-color: var(--white-color);
+  width: 100%;
+  padding: 2.5rem;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1200px;
+  margin: auto;
+  /* margin-inline: 1.5rem; */
+}
+
+.section-separator {
+  width: 100%;
+  height: 70px;
+
+  margin: 1.5rem 0;
+  background-color: var(--color-primary);
+}
+
+.box-shadow-right {
+  box-shadow: rgba(114, 71, 153, 1) 15px 15px;
+  /*box-shadow: rgba(114, 71, 153, 0.4) 15px 15px, rgba(114, 71, 153, 0.3) 10px 10px, rgba(114, 71, 153, 0.2) 15px 15px, rgba(114, 71, 153, 0.1) 20px 20px */
+}
+.box-shadow-left {
+  box-shadow: rgba(114, 71, 153, 1) -15px 15px;
+}
+
+.box-shadow-right-orange {
+  box-shadow: rgba(242, 128, 0, 1) 15px 15px;
+  /*box-shadow: rgba(114, 71, 153, 0.4) 15px 15px, rgba(114, 71, 153, 0.3) 10px 10px, rgba(114, 71, 153, 0.2) 15px 15px, rgba(114, 71, 153, 0.1) 20px 20px */
+}
+
+.box-shadow-left-orange {
+  box-shadow: rgba(242, 128, 0, 1) -15px 15px;
+}
+
+/*=============== FORM CONTENT ===============*/
+
+.contact-us {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-form,
+.map {
+  border-radius: 0.8rem;
+}
+
+/*=============== FOOTER CONTENT ===============*/
+
+.footer {
+  width: 100%;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--white-color);
+  transition: 0.2s;
+}
+
+.footer a:hover {
+  color: var(--color-secondary);
+}
+
+.footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.footer-links a {
+  align-self: center;
+}
+
+.footer-links ul li {
+  margin-top: 0.5rem;
+}
+
+.other-links {
+  width: 100%;
+  background-color: var(--color-primary);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer i {
+  font-size: 1.25rem;
+  font-weight: initial;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-inline: 1.5rem;
+  }
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+  }
+
+  .section-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .fourth-section-background {
+    padding-bottom: 2rem;
+  }
+
+  .privacy-policy-card {
+    margin-inline: 1.5rem;
+  }
+
+  .contact-us {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contact-form,
+  .map {
+    width: 100%;
+  }
+}
+/*=============== Icon and Translations Configurations ===============*/
+#icon-container {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px;   /* Adjust as needed */
+  z-index: 1000;
+}
+
+#trigger-icon {
+  width: 50px;  /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  cursor: pointer;
+  transition: opacity 0.5s ease; /* Smooth transition for the opacity */
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.translatable {
+  transition: opacity 0.5s ease;
+}
+
+/*=============== Privacy Policy Page CONTENT ===============*/
+.privacy-policy-card {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  color: var(--black-color-light);
+  background-color: #eeeef2;
+  border-radius: 0.8rem;
+  overflow: hidden;
+
+  margin: auto;
+  padding: 2.5rem;
+}
+
+.privacy-policy-card h1 {
+  padding: 1rem;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.privacy-policy-card h2 {
+  margin: 1rem 0;
+}
+
+.privacy-policy-card p {
+  margin: 0.5rem 0;
+  font-size: 1.3125rem;
+  
+}

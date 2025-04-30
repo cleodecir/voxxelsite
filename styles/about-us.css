@@ -1,0 +1,90 @@
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+.card {
+  color: var(--white-color);
+  background-color: var(--color-box-base);
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+
+.card h2 {
+  font-size: 2.3rem;
+}
+
+.card p {
+  margin: auto;
+  font-size: 1.3125rem;
+}
+
+.grid-container .card:nth-child(1),
+.grid-container .card:nth-child(2) {
+  grid-column: span 1;
+  min-height: 200px;
+}
+
+.card:nth-child(3) {
+  grid-column: span 2;
+  text-align: center;
+}
+
+.card:nth-child(4) {
+  grid-column: span 2;
+}
+
+.card:nth-child(4) h2 {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .card:nth-child(3),
+  .card:nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .card h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .grid-container .card:nth-child(1) p,
+  .grid-container .card:nth-child(2) p,
+  .grid-container .card:nth-child(3) p,
+  .grid-container .card:nth-child(4) p{
+    font-size: 1.2rem;
+  }
+
+  .grid-container .card:nth-child(3) {
+    text-align: center;
+  }
+
+  .about-us div p {
+    font-size: 1.2rem;
+  }
+
+  .card:nth-child(1) {
+    height: auto;
+  }
+
+  .grid-container .card:nth-child(1),
+  .grid-container .card:nth-child(2) {
+    grid-column: span 1;
+    min-height: auto;
+  }
+}
