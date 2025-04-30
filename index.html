@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--=============== TITLE ICONS ===============-->
+    <!--=============== CSS ===============-->
+
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/main-card.css" />
+    <link rel="stylesheet" href="./styles/services.css" />
+    <link rel="stylesheet" href="./styles/about-us.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Voxxel</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav role="navigation" aria-label="Main" class="nav container">
+        <div class="nav__data">
+          <a href="./index.html" class="nav__logo">
+            <img src="./assets/VOXXEL_2023 1.png" alt="Voxxel Logo" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link translatable" id="home-link">Home</a></li>
+
+            <li><a href="#abou" class="nav__link translatable" id="abou-link">Sobre</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                <a id="serv-link" href="#serv" class="translatable" id="serv-link">Serviços</a>
+                <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="./mdm.html" class="dropdown__link"> MDM </a>
+                </li>
+
+                <li>
+                  <a href="./ti.html" class="dropdown__link translatable" id="ti-link"> TI </a>
+                </li>
+
+                <!--=============== DROPDOWN SUBMENU ===============-->
+                <!-- <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> Documents
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> Payments
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> Refunds
+                                 </a>
+                              </li>
+                           </ul>
+                        </li> -->
+                <!--=============== NOT CURRENTLY USING BUT COULD BE USEFUL DROPDOWN SUBMENU ===============-->
+              </ul>
+            </li>
+
+            <li><a href="#cont" class="nav__link translatable" id="cont-link">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div id="home" class="section-background">
+        <section class="main-card container">
+          <div class="content">
+            <div class="content-titles">
+              <h1 id="realize" class="translatable">REALIZE MAIS COM</h1>
+              <h1 id="seusDados" class="translatable">SEUS DADOS!</h1>
+
+              <div class="content-texts">
+                <span class="translatable" id="simplifyData"
+                  >Simplifique seus processos, centralize informações de
+                  produtos,<br />
+                  clientes e elimine informações sem integridade.</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section-background">
+        <section id="serv" class="services-cards container">
+          <div id="MDMS" class="service-card box-shadow-right">
+            <div class="service-card-content">
+              <div>
+                <h2>Master Data Management</h2>
+                <p id="section-mdm-1" class="translatable">
+                  Configure rapidamente modelos de dados complexos e consolide
+                  dados de múltiplas fontes e formatos.
+                </p>
+                <p id="section-mdm-2" class="translatable">
+                  Com o STEP garantimos dados precisos e de confiança entre
+                  multiplos domínios!
+                </p>
+              </div>
+
+              <a class="service-card__link"class="translatable" href="./mdm.html" >Saiba mais</a>
+            </div>
+            <img
+              src="./assets/MDM_service.png"
+              alt="Master Data Management Image"
+              class="service-image"
+            />
+          </div>
+
+          <div id="TISC" class="service-card box-shadow-left">
+            <img
+              src="./assets/TI_service.png"
+              alt="Master Data Management Image"
+              class="service-image"
+            />
+            <div class="service-card-content">
+              <div>
+                <h2 id="section-ti" class="translatable">Serviços de TI</h2>
+                <p id="section-ti-1" class="translatable">
+                  Projetamos, implantamos e administramos sua infraestrutura de
+                  TI com as melhores tecnologias do mercado!
+                </p>
+                <p id="section-ti-2" class="translatable">
+                  Possuímos vasta experiência em trabalhos com os softwares de
+                  Engenharia (CAx/PLM) mais utilizados no mundo.
+                </p>
+              </div>
+
+              <a class="service-card__link" class="translatable" href="./ti.html">Saiba mais</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section-background">
+        <section id="abou" class="about-us container">
+          <div id="about-us-card" class="card box-shadow-right">
+            <h2 id="about-us-title" class="translatable">Sobre nós</h2>
+            <p id="about-us-paragraph" class="translatable">
+              A Voxxel é uma empresa com experiência em tecnologia da Informação
+              e iniciou suas atividades em 1988, para atender a necessidade da
+              indústria automobilística na automação de engenharia de produto.
+              Atualmente atua nas áreas de gerenciamento de dados mestres de
+              produto e cliente. É pioneira no Brasil em certificações da Stibo
+              Systems e tem experiência em vários projetos de MDM/STEP.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="section-background">
+        <section class="grid-container container">
+          <div class="card box-shadow-right-orange">
+            <h2 id="missao-title" class="translatable">Missão</h2>
+            <p id="missao-paragraph" class="translatable">
+              Comprometer-se a melhorar a gestão dos nossos clientes,
+              tornando-os empresas e negócios de alto desempenho e pleno
+              potencial.
+            </p>
+          </div>
+          <div class="card box-shadow-right-orange">
+            <h2 id="visao-title" class="translatable">Visão</h2>
+            <p id="visao-paragraph" class="translatable">
+              Ser uma marca reconhecida pela excelência em consultoria e
+              serviços em tecnologia da informação.
+            </p>
+          </div>
+          <div class="card box-shadow-left">
+            <h2 id="valores-title" class="translatable">Valores</h2>
+            <p id="valores-paragraph">Comprometimento Confiança Ética Profissionalismo Respeito</p>
+          </div>
+          <div class="card box-shadow-left">
+            <h2 id="politica-title" class="translatable" >Política de qualidade</h2>
+            <p id="politica-paragraph" class="translatable">
+              A Voxxel, acredita que através do comprometimento dos
+              colaboradores, da parceria com nossos fornecedores, do compromisso
+              com a melhoria contínua em seus processos o atendimento aos
+              requisitos aplicáveis e de outras partes interessadas, visa o
+              aumento da satisfação dos nossos clientes e ser uma empresa
+              reconhecida como um sinônimo de qualidade em Consultoria e
+              Serviços em Tecnologia da Informação.
+            </p>
+            <p>&nbsp;</p>
+            <h5 id="emissao-title">Emissão: 08/12/2023</h5>
+            <h5 id="revisao-title">Revisão</h5>
+            <h5 id="aprova-title">Aprovação: Direção</h5>
+            <p></p>
+          </div>
+        </section>
+      </div>
+      <div class="section-background">
+        <section id="cont" class="contact-us container">
+          <iframe
+            class="contact-form"
+            width="60%"
+            height="480px"
+            src="
+https://forms.office.com/Pages/ResponsePage.aspx?id=C_BpmYyzB0m2VOLYg6t8mg8DBVwDz2FLkbsEsshRvrdUNDRLTk02ME5ZTE03MjFVSzZCWVJVM0ZOOSQlQCN0PWcu&embed=true"
+            frameborder="0"
+            marginwidth="0"
+            marginheight="0"
+            style="border: none; max-width: 100%; max-height: 100vh"
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            msallowfullscreen
+          >
+          </iframe>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.143831977751!2d-46.550855423562844!3d-23.706557178700404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce422c98602ecb%3A0xa3d2242ff834da67!2sVoxxel%20Consultoria%20de%20Sistemas%20e%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1710867439981!5m2!1spt-BR!2sbr"
+            width="40%"
+            height="480"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </div>
+      <div id="icon-container">
+        <img id="trigger-icon" src="./assets/UnitedStatesFlag.png" alt="Trigger Icon">
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="footer-links container">
+        <a href="#" class="footer__logo">
+          <img src="./assets/VOXXEL_2023 1.png" alt="Voxxel Logo" />
+        </a>
+        <ul class="footer-lists">
+          <li>E-mail</li>
+          <li>
+            <a href="voxxel@voxxel.com.br" class="footer_link"
+              >voxxel@voxxel.com.br</a
+            >
+          </li>
+        </ul>
+        <ul class="footer-lists">
+          <li id="phone" class="translatable">Telefone</li>
+          <li>(11) 4123-2946</li>
+          <li>(11) 4332-2710</li>
+        </ul>
+        <ul class="footer-lists">
+          <li id="visit-us" class="translatable">Faça uma visita</li>
+          <li>Av. Francisco Prestes Maia, 275, Centro</li>
+          <li>São Bernardo do Campo, SP</li>
+          <li>Conjunto 91</li>
+          <li>09770-000</li>
+        </ul>
+        <ul class="footer-lists">
+          <li>
+            <a
+              href="https://www.linkedin.com/company/voxxel-consultoria-de-sistemas-ltda/"
+              class="footer-link"
+              ><i class="ri-linkedin-box-line"> </i> LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/voxxel.consultoria/"
+              class="footer-link"
+              ><i class="ri-instagram-line"></i> Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/voxxelconsultoriaesitemas/"
+              class="footer-link"
+              ><i class="ri-facebook-box-line"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCnfDkeV1m2rQ8lVCM-9eMeg"
+              class="footer-link"
+              ><i class="ri-youtube-line"></i> Youtube</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@voxtalk.voxxel"
+              class="footer-link"
+              ><i class="ri-mic-line"></i> Podcast</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/show/7uUrUDBqIYRtMmvHdjVTvL"
+              class="footer-link"
+              ><i class="ri-spotify-fill"></i> Podcast</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="other-links">
+        <!-- <a href="" class="footer-bottom-link">Copyright</a> -->
+        <a href="./privacyPolices.html" class="footer-bottom-link"
+          >Política de privacidade</a
+        >
+      </section>
+    </footer>
+    <!--=============== MAIN JS ===============-->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/translation.js"></script>
+  </body>
+</html>

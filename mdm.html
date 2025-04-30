@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--=============== TITLE ICONS ===============-->
+    <!--=============== CSS ===============-->
+
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/main-card.css" />
+    <link rel="stylesheet" href="./styles/services.css" />
+    <link rel="stylesheet" href="./styles/about-us.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Voxxel</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav role="navigation" aria-label="Main" class="nav container">
+        <div class="nav__data">
+          <a href="./index.html" class="nav__logo">
+            <img src="./assets/VOXXEL_2023 1.png" alt="Voxxel Logo" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="./index.html#home" class="nav__link translatable" id="home-link">Home</a></li>
+
+            <li><a href="./index.html#abou" class="nav__link translatable" id="abou-link" >Sobre</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                <a id="serv-link" class="translatable" href="./index.html#serv">Serviços</a>
+                <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="./mdm.html" class="dropdown__link">
+                    MDM
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./ti.html" id="ti-link" class="dropdown__link translatable">
+                    TI
+                  </a>
+                </li>
+
+                <!--=============== DROPDOWN SUBMENU ===============-->
+                <!-- <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> Documents
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> Payments
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> Refunds
+                                 </a>
+                              </li>
+                           </ul>
+                        </li> -->
+                <!--=============== NOT CURRENTLY USING BUT COULD BE USEFUL DROPDOWN SUBMENU ===============-->
+              </ul>
+            </li>
+
+            <li><a href="./index.html#cont" class="nav__link translatable" id="cont-link">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div id="home" class="section-background">
+        <section id="serv" class="services-cards container">
+          <div id="MDMS" class="service-card box-shadow-right">
+            <div class="service-card-content">
+              <div>
+                <h2>Master Data Management</h2>
+                <p id="mdm-paragraph-0" class="translatable">
+                  Aprimore seus processos, enriqueça seus dados e compartilhe
+                  informações entre seus sistemas com segurança e confiança!
+                </p>
+              </div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Master Data Management Image"
+              class="service-image"
+            />
+          </div>
+
+          <div class="service-card box-shadow-left-orange">
+            <img
+              src="https://images.unsplash.com/photo-1581091871343-9a6c099886ed?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Master Data Management Image"
+              class="service-image"
+            />
+            <div class="service-card-content">
+              <div>
+                <h2 id="mdm-title-1" class="translatable">Gestão de Dados Mestres Multidomínio</h2>
+                <p id="mdm-paragraph-1" class="translatable">
+                  O MDM de vários domínios expande significativamente os
+                  benefícios além do que as soluções tradicionais de MDM ou PIM
+                  (gerenciamento de informações do produto) podem abordar. Ele
+                  também permite a criação de um Digital Business Hub
+                  centralizado que coleta dados uma vez para impulsionar
+                  decisões e resultados de negócios superiores em toda a
+                  empresa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card box-shadow-right">
+            <div class="service-card-content">
+              <div>
+                <h2 id="mdm-title-2" class="translatable">Gestão de Dados Mestres de Produtos</h2>
+                <p id="mdm-paragraph-2" class="translatable">
+                  O MDM de vários domínios expande significativamente os
+                  benefícios além do que as soluções tradicionais de MDM ou PIM
+                  (gerenciamento de informações do produto) podem abordar. Ele
+                  também permite a criação de um Digital Business Hub
+                  centralizado que coleta dados uma vez para impulsionar
+                  decisões e resultados de negócios superiores em toda a
+                  empresa.
+                </p>
+              </div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Master Data Management Image"
+              class="service-image"
+            />
+          </div>
+
+          <div
+            id="clientMdm-service-card-container"
+            class="service-card box-shadow-left-orange"
+          >
+            <div id="client-mdm" class="service-card-content">
+              <div>
+                <h2 id="mdm-title-3" class="translatable">Gestão de Dados Mestres de Clientes</h2>
+                <p id="mdm-paragraph-3" class="translatable">
+                  Alcance objetivos de negócios e forneça excelência operacional
+                  com dados confiáveis de clientes.Obter uma visão única do
+                  cliente pode ser um desafio com dados dispersos em vários
+                  sistemas de negócios.Sem dados confiáveis, as organizações não
+                  podem fornecer as experiências consistentes e personalizadas
+                  que as pessoas e empresas esperam. Campanhas direcionadas,
+                  alcance omnicanal, marketing baseado em conta e vendas
+                  agregadas e adicionais proativas exigem dados confiáveis do
+                  cliente.
+                </p>
+                <img
+                  src="./assets/clientMdm.png"
+                  alt="Master Data Management Image"
+                  class="service-image"
+                />
+                <p id="mdm-paragraph-4">
+                  Sem isso, sua personalização e outras iniciativas estratégicas
+                  falham antes de começar.A Gestão de Dados Mestres de Clientes
+                  da Stibo Systems permite que você entenda melhor seus
+                  clientes, consolidando, limpando, melhorando e controlando os
+                  dados associados a eles. Isto proporciona uma visão mais
+                  profunda do histórico e das preferências dos consumidores, e
+                  fornece às empresas B2B uma visão consolidada de seus clientes
+                  diretos e indiretos. Com um banco de dados robusto e
+                  centralizado, a Gestão de Dados Mestres pode melhorar a agilidade operacional, a tomada de decisões e as análises, oferecer experiências superiores ao cliente e gerar maior receita e eficiência.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card box-shadow-right">
+            <div class="service-card-content">
+              <div>
+                <h2 id="mdm-title-5">Gestão de Ativos Digitais em MDM</h2>
+                <p id="mdm-paragraph-5">
+                  A solução Gestão de Ativos Digitais integrada do STEP oferece
+                  esses recursos necessários para gerenciar e associar ativos
+                  digitais a cada produto, além de incluir o repositório
+                  centralizado, processos de aprovação, funcionalidade de
+                  pesquisa e recursos de localização necessários para fornecer a
+                  experiência que os clientes esperam.
+                </p>
+              </div>
+            </div>
+            <img
+              src="./assets/files image.png"
+              alt="Master Data Management Image"
+              class="service-image"
+            />
+          </div>
+        </section>
+      </div>
+      <div id="icon-container">
+        <img id="trigger-icon" src="./assets/UnitedStatesFlag.png" alt="Trigger Icon">
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="footer-links container">
+        <a href="#" class="footer__logo">
+          <img src="./assets/VOXXEL_2023 1.png" alt="Voxxel Logo" />
+        </a>
+        <ul class="footer-lists">
+          <li>E-mail</li>
+          <li>
+            <a href="voxxel@voxxel.com.br" class="footer_link"
+              >voxxel@voxxel.com.br</a
+            >
+          </li>
+        </ul>
+        <ul class="footer-lists">
+          <li id="phone" class="translatable">Telefone</li>
+          <li>(11) 4123-2946</li>
+          <li>(11) 4332-2710</li>
+        </ul>
+        <ul class="footer-lists">
+          <li id="visit-us" class="translatable">Faça uma visita</li>
+          <li>Av. Francisco Prestes Maia, 275, Centro</li>
+          <li>São Bernardo do Campo, SP</li>
+          <li>Conjunto 91</li>
+          <li>09770-000</li>
+        </ul>
+        <ul class="footer-lists">
+          <li>
+            <a
+              href="https://www.linkedin.com/company/voxxel-consultoria-de-sistemas-ltda/"
+              class="footer-link"
+              ><i class="ri-linkedin-box-line"> </i> LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/voxxel.consultoria/"
+              class="footer-link"
+              ><i class="ri-instagram-line"></i> instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/voxxelconsultoriaesitemas/"
+              class="footer-link"
+              ><i class="ri-facebook-box-line"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCnfDkeV1m2rQ8lVCM-9eMeg"
+              class="footer-link"
+              ><i class="ri-youtube-line"></i> Youtube</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://www.youtube.com/@voxtalk.voxxel"
+              class="footer-link"
+              ><i class="ri-mic-line"></i> Podcast</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/show/7uUrUDBqIYRtMmvHdjVTvL"
+              class="footer-link"
+              ><i class="ri-spotify-fill"></i> Podcast</a
+            > 
+          </li>
+        </ul>
+      </section>
+      <section class="other-links">
+        <!-- <a href="" class="footer-bottom-link">Copyright</a> -->
+        <a href="./privacyPolices.html" class="footer-bottom-link"
+          >Política de privacidade</a
+        >
+      </section>
+      
+    </footer>
+    <!--=============== MAIN JS ===============-->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/translation.js"></script>
+  </body>
+</html>

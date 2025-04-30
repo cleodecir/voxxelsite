@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--=============== TITLE ICONS ===============-->
+    <!--=============== CSS ===============-->
+
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/main-card.css" />
+    <link rel="stylesheet" href="./styles/services.css" />
+    <link rel="stylesheet" href="./styles/about-us.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Voxxel</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav role="navigation" aria-label="Main" class="nav container">
+        <div class="nav__data">
+          <a href="./index.html" class="nav__logo">
+            <img src="./assets/VOXXEL_2023 1.png" alt="Voxxel Logo" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="./index.html#home" class="nav__link translatable" id="home-link">Home</a></li>
+
+            <li><a href="./index.html#abou" class="nav__link translatable" id="abou-link">Sobre</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                <a id="serv-link" class="translatable" href="./index.html#serv">Serviços</a>
+                <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="./mdm.html" class="dropdown__link">
+                    MDM
+                  </a>
+                </li>
+
+                <li>
+                  <a href="./ti.html" id="ti-link" class="dropdown__link translatable">
+                    TI
+                  </a>
+                </li>
+
+                <!--=============== DROPDOWN SUBMENU ===============-->
+                <!-- <li class="dropdown__subitem">
+                           <div class="dropdown__link">
+                              <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                           </div>
+
+                           <ul class="dropdown__submenu">
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-file-list-line"></i> Documents
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-cash-line"></i> Payments
+                                 </a>
+                              </li>
+      
+                              <li>
+                                 <a href="#" class="dropdown__sublink">
+                                    <i class="ri-refund-2-line"></i> Refunds
+                                 </a>
+                              </li>
+                           </ul>
+                        </li> -->
+                <!--=============== NOT CURRENTLY USING BUT COULD BE USEFUL DROPDOWN SUBMENU ===============-->
+              </ul>
+            </li>
+
+            <li><a href="./index.html#cont" id="cont-link" class="nav__link translatable">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div id="home" class="section-background">
+        <section id="serv" class="services-cards container">
+          <div id="MDMS" class="service-card box-shadow-right">
+            <div class="service-card-content">
+              <div>
+                <h2 id="ti-title-1" class="translatable">Hardware e Soluções</h2>
+                <p id="ti-paragraph-1" class="translatable">
+                  Trabalhamos com os maiores fabricantes de equipamentos e soluções.
+Implementação e Gerenciamento de redes estruturadas;
+projeto, consultoria e implementação de Infraestrutura, equipamentos e servidores;
+                </p>
+              </div>
+            </div>
+            <img
+              src="./assets/jorge.png"
+              alt="Master Data Management Image"
+              class="service-image"
+            />
+          </div>
+
+          <div class="service-card box-shadow-left-orange">
+            <img 
+              src="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Master Data Management Image"
+              class="service-image"
+            />
+            <div class="service-card-content">
+              <div>
+                <h2 id="ti-title-2" class="translatable">Sistemas CAx</h2>
+                <p id="ti-paragraph-2" class="translatable">
+                  Possuímos vasta experiência em trabalhos com os softwares de Engenharia (CAx/PLM) mais utilizados no mundo.<br><br>
+- Implementação<br>
+- Suporte<br>
+- Customização de Ambientes<br>
+- Administração<br>
+- Treinamento
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="MDMS" class="service-card box-shadow-right">
+            <div class="service-card-content">
+              <div>
+                <h2 id="ti-title-3" class="translatable">Software e Aplicações</h2>
+                <p id="ti-paragraph-3" class="translatable">
+                  Com profissionais altamente capacitados, utilizamos as melhores tecnologias. Instalação e Administração de Servidores Windows e Linux<br><br>
+                  - Desenvolvimento de aplicações<br>
+                  - Integração de sistemas<br>
+                  - Virtualização<br>
+                  - Gerenciamento de dados<br> 
+                  - VDI, IA e Cloud
+                </p>
+              </div>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Master Data Management Image"
+              class="service-image"
+            />
+          </div>
+       
+        </section>
+      </div>
+      <div id="icon-container">
+        <img id="trigger-icon" src="./assets/UnitedStatesFlag.png" alt="Trigger Icon">
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="footer-links container">
+        <a href="#" class="footer__logo">
+          <img src="./assets/VOXXEL_2023 1.png" alt="Voxxel Logo" />
+        </a>
+        <ul class="footer-lists">
+          <li>E-mail</li>
+          <li>
+            <a href="voxxel@voxxel.com.br" class="footer_link"
+              >voxxel@voxxel.com.br</a
+            >
+          </li>
+        </ul>
+        <ul class="footer-lists">
+          <li id="phone" class="translatable">Telefone</li>
+          <li>(11) 4123-2946</li>
+          <li>(11) 4332-2710</li>
+        </ul>
+        <ul class="footer-lists">
+          <li id="visit-us" class="translatable">Faça uma visita</li>
+          <li>Av. Francisco Prestes Maia, 275, Centro</li>
+          <li>São Bernardo do Campo, SP</li>
+          <li>Conjunto 91</li>
+          <li>09770-000</li>
+        </ul>
+        <ul class="footer-lists">
+          <li>
+            <a
+              href="https://www.linkedin.com/company/voxxel-consultoria-de-sistemas-ltda/"
+              class="footer-link"
+              ><i class="ri-linkedin-box-line"> </i> LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/voxxel.consultoria/"
+              class="footer-link"
+              ><i class="ri-instagram-line"></i> instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/voxxelconsultoriaesitemas/"
+              class="footer-link"
+              ><i class="ri-facebook-box-line"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCnfDkeV1m2rQ8lVCM-9eMeg"
+              class="footer-link"
+              ><i class="ri-youtube-line"></i> Youtube</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://www.youtube.com/@voxtalk.voxxel"
+              class="footer-link"
+              ><i class="ri-mic-line"></i> Podcast</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/show/7uUrUDBqIYRtMmvHdjVTvL"
+              class="footer-link"
+              ><i class="ri-spotify-fill"></i> Podcast</a
+            > 
+          </li>
+        </ul>
+      </section>
+      <section class="other-links">
+        <!-- <a href="" class="footer-bottom-link">Copyright</a> -->
+        <a href="./privacyPolices.html" class="footer-bottom-link"
+          >Política de privacidade</a
+        >
+      </section>
+    </footer>
+    <!--=============== MAIN JS ===============-->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/translation.js"></script>
+  </body>
+</html>
